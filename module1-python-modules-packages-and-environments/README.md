@@ -2,7 +2,7 @@
 
 This is a simple data science helper package.
 to install pip install -i https://test.pypi.org/simple/ lambdadata-darek==0.0.1
-In python enviroment then import lambdadata
+In python enviroment then from lambdadata import lambdadata_py
 
 ## Contains:
 
