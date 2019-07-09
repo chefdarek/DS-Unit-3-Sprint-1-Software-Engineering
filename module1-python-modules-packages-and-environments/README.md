@@ -8,22 +8,22 @@ In python enviroment then import lambdadata
 
 # DF CLEANING AND INFO
 
-nullcheck(df)
+nullcheck(df)\
 '''checks for nulls in a dataframe'''
 
-whitespace(df):
+whitespace(df)\
 '''removes whitespace from dataframe'''
 
-remove_percent(df):
+remove_percent(df)\
 '''duh'''
 
 # Statistics
  
-find_outliers(list):
+find_outliers(list)\
 '''it doesn't grant wishes'''
   
   
-proba_givenb(probb_givena, proba, probb_givennota):
+proba_givenb(probb_givena, proba, probb_givennota)\
   
   '''#Single Bayes Theorem Test A given B'''
  
