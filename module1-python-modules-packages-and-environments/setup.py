@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lambdadata_darek",
+    name="lambdadata_Darekdatascience",
     version="0.0.1",
     author="Darek Tidwell",
     author_email="darekdatascience@gmail.com",
