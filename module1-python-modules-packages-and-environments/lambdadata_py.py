@@ -94,15 +94,15 @@ def confidence_interval(data, confidence=.95):
 
 
 
-def support_ttest(feature, level):
+def support_ttest(feature, level, class1, class2):
   
   '''# Function takes a feature from the dataframe and a significance level and 
    returns a tuple with a boolean value (True if the pvalue < significance level) 
    and the pvalue.'''
   
-  dem = df[df["Class Name"]=='democrat'][feature]
-  rep = df[df['Class Name']=='republican'][feature]
-  statistic, pvalue = ttest_ind(dem, rep, nan_policy='omit')
+  one = df[df["Class Name"]== class1][feature]
+  two = df[df['Class Name']== class2][feature]
+  statistic, pvalue = ttest_ind(one, two, nan_policy='omit')
   return pvalue < level, pvalue
 
 
@@ -126,7 +126,7 @@ def print_ttests(index):
 
 def get_pca(df,n):
   
-'''Gets the n number of PCA from a dataframe'''
+  '''Gets the n number of PCA from a dataframe on continuous variables'''
 
   print("Data Frame")
   print(df.head())
@@ -152,7 +152,7 @@ def get_pca(df,n):
               pairs_to_drop.add((cols[i], cols[j]))
       return pairs_to_drop
 
-  def get_top_abs_correlations(df, n=5):
+  def get_top_abs_correlations(df, n=5): 
       au_corr = df.corr().abs().unstack()
       labels_to_drop = get_redundant_pairs(df)
       au_corr = au_corr.drop(labels=labels_to_drop).sort_values(ascending=False)

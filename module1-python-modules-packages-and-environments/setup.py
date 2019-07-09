@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdadata_Darekdatascience",
-    version="0.0.1",
+    version="0.0.2",
     author="Darek Tidwell",
     author_email="darekdatascience@gmail.com",
     description="A small example datascience helper package",
