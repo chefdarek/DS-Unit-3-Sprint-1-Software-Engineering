@@ -4,9 +4,9 @@ This is a simple data science helper package.
 to install pip install -i https://test.pypi.org/simple/ lambdadata-darek==0.0.1
 In python enviroment then import lambdadata
 
-##Contains:
+## Contains:
 
-#DF CLEANING AND INFO
+# DF CLEANING AND INFO
 
 nullcheck(df)
 '''checks for nulls in a dataframe'''
@@ -17,7 +17,7 @@ whitespace(df):
 remove_percent(df):
 '''duh'''
 
-#Statistics
+# Statistics
  
 find_outliers(list):
 '''it doesn't grant wishes'''
@@ -56,7 +56,7 @@ print_ttests(index):
   ''' Function takes a column value for the index, prints pvalues and whether or not
   null hypothesis should be rejected for all other features in the dataframe.'''
         
-#PCA
+# PCA
 
 get_pca(df,n):  
 '''Gets the n number of principle components from a dataframe'''
